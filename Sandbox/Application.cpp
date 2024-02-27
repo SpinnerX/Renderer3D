@@ -4,14 +4,25 @@
 #include <Renderer3D/Events/KeyEvent.h>
 #include <Renderer3D/Events/KeyCodes.h>
 #include <Renderer3D/platforms/Linux/LinuxInputPoll.h>
+#include <Renderer3D/Core/Layer.h>
+
+class ExampleLayer : public Renderer3D::Layer{
+public:
+	
+	void onUpdate(Renderer3D::Timestep ts) override {
+	}
+
+	void onEvent(Renderer3D::Event& event) override{
+		if(Renderer3D::LinuxInputPoll::isKeyPressed(RENDER_KEY_ESCAPE)){
+			Renderer3D::Application::Get().close();
+		}
+	}
+};
 
 class ExampleApp : public Renderer3D::Application{
 public:
 	ExampleApp() : Application(){
-	}
-
-	void onEvent(Renderer3D::Event& event) override{
-		if(Renderer3D::LinuxInputPoll::isKeyPressed(RENDER_KEY_ESCAPE)){}
+		pushLayer(new ExampleLayer());
 	}
 };
 
