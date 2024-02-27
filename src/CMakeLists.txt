@@ -7,6 +7,8 @@ set(
 	Renderer3D/platforms/Linux/LinuxWindow.cpp
 	Renderer3D/Event/InputPoll.cpp
 	Renderer3D/platforms/Linux/LinuxInputPoll.cpp
+	Renderer3D/Core/Layer.cpp
+	Renderer3D/Core/LayerStack.cpp
 )
 
 set(
@@ -26,6 +28,8 @@ set(
 	../include/Renderer3D/Events/MouseEvent.h
 	../include/Renderer3D/Events/InputPoll.h
 	../include/Renderer3D/platforms/Linux/LinuxInputPoll.h
+	../include/Renderer3D/Core/Layer.h
+	../include/Renderer3D/Core/LayerStack.h
 )
 
 include_directories(
