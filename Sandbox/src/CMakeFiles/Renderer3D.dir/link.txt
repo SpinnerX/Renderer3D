@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRenderer3D.a CMakeFiles/Renderer3D.dir/Renderer3D/Core/RendererLogger.cpp.o CMakeFiles/Renderer3D.dir/Renderer3D/Core/EntryPoint.cpp.o CMakeFiles/Renderer3D.dir/Renderer3D/platforms/Linux/LinuxWindow.cpp.o CMakeFiles/Renderer3D.dir/Renderer3D/Event/InputPoll.cpp.o
+/usr/bin/ranlib libRenderer3D.a

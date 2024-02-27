@@ -1,0 +1,3 @@
+/home/spinnerx/Desktop/Renderer3D/Sandbox/build/CMakeFiles/Sandbox.dir
+/home/spinnerx/Desktop/Renderer3D/Sandbox/build/CMakeFiles/edit_cache.dir
+/home/spinnerx/Desktop/Renderer3D/Sandbox/build/CMakeFiles/rebuild_cache.dir
