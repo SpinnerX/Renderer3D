@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/spinnerx/Desktop/Renderer3D/Sandbox/build",
-  "command": "/usr/bin/c++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB  -std=gnu++20 -fsanitize=address -o CMakeFiles/Sandbox.dir/Application.cpp.o -c /home/spinnerx/Desktop/Renderer3D/Sandbox/Application.cpp",
-  "file": "/home/spinnerx/Desktop/Renderer3D/Sandbox/Application.cpp",
-  "output": "CMakeFiles/Sandbox.dir/Application.cpp.o"
-}
-]
