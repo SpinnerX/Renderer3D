@@ -3,6 +3,7 @@
 #include <Renderer3D/Core/Window.h>
 #include <Renderer3D/Events/Event.h>
 #include <Renderer3D/Events/ApplicationEvent.h>
+#include <Renderer3D/Core/LayerStack.h>
 
 namespace Renderer3D{
 	class RENDER_API Application{
@@ -12,12 +13,16 @@ namespace Renderer3D{
 
 		void Run();
 
-		void close();
-
 		void onEvent(Event& event);
 
-		inline static Application& Get() { return *instance; }
+		void pushLayer(Layer* layer);
 
+		void pushOverlay(Layer* overlay);
+
+		inline static Application& Get() { return *instance; }
+		
+		void close();
+		
 		inline Window& GetWindow() { return *_window; }
 
 	private:
@@ -26,6 +31,8 @@ namespace Renderer3D{
 	private:
 		Scope<Window> _window;
 		bool isRunning;
+		float lastFrameTime = 0.0f;
+		LayerStack _layerStack;
 		static Application* instance;
 	};
 
